@@ -1,0 +1,15 @@
+{
+  "name": "掘金签到抽奖",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "打开掘金自动签到抽奖",
+  "browser_action": {
+    "default_icon": "48x48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://juejin.cn/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
